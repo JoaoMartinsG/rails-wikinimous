@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+body {
+  font-family: Arial, Helvetica, sans-serif
+}
+h1 {
+  color: rgba(128, 128, 128, 0.645);
+}
+h2 {
+  color: rgb(0, 190, 253);
+}
+a {
+  text-decoration: none !important;
+}
+
+.fa-pencil {
+  font-size: 25px;
+}
+.fa-trash-can {
+  font-size: 25px;
+}
+.main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.center {
+  width: 800px;
+}
+.show h2 {
+  color: black ;
+}
