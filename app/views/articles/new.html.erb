@@ -1,9 +1,31 @@
-<%= form_for(@article) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :content %>
-  <%= f.text_field :content %>
-  <%= f.submit %>
-<% end %>
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid border-bottom">
+    <%= link_to 'Wikinimous', articles_path, class: 'text-muted' %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-<p><%= link_to 'Back', articles_path %></p>
+      </ul>
+      <span class="navbar-text">
+        <%= link_to 'New Article', new_article_path(:id), class: 'text-muted' %>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<div class='main show'>
+  <div class='center'>
+    <ul>
+    <h2>New article</h2>
+      <%= form_for(@article) do |f| %>
+        <li class='mb-3'><%= f.label :title %></li>
+        <li class='mb-3 full'><%= f.text_field :title %></li>
+        <li class='mb-3'><%= f.label :content %></li>
+        <li class='mb-3 full'><%= f.text_field :content %></li>
+        <li class='mb-3' ><%= f.submit %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

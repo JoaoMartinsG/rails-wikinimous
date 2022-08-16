@@ -40,6 +40,20 @@ a {
 .center {
   width: 800px;
 }
+.center li {
+  list-style: none;
+}
+#article_title {
+  width: 700px ;
+}
+#article_content {
+  width: 700px ;
+
+}
 .show h2 {
   color: black ;
+}
+.new {
+  display: flex;
+  justify-content:  center;
 }
